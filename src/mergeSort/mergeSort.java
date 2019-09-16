@@ -15,10 +15,10 @@ public class mergeSort {
         int[] rightSplit = Arrays.copyOfRange(intArray, midPoint, arrayLength);
         int[] sortedLeftSplit = sortInts(leftSplit);
         int[] sortedRightSplit = sortInts(rightSplit);
-        return mergeSplit(sortedLeftSplit, sortedRightSplit);
+        return mergeSplits(sortedLeftSplit, sortedRightSplit);
     }
 
-    public static int[] mergeSplit(int[] leftSplit, int[] rightSplit) {
+    public static int[] mergeSplits(int[] leftSplit, int[] rightSplit) {
         int l = 0;
         int r = 0;
         int leftLength = leftSplit.length;
